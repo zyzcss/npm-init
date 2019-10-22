@@ -1,0 +1,28 @@
+{
+    "extends": [
+        "tslint:recommended"
+    ],
+    "rules": {
+        "no-console": false,
+        "indent": [
+            true,
+            "spaces",
+            2
+        ],
+        "no-consecutive-blank-lines": [
+            true,
+            2
+        ],
+        "align": [
+            true,
+            "parameters",
+            "statements"
+        ]
+    },
+    "linterOptions": {
+        "exclude": [
+            "config/**/*.js",
+            "node_modules/**"
+        ]
+    }
+}
