@@ -5,7 +5,7 @@ import React, { PureComponent } from "react";
 import YuseiIcon from "../Icon/Icon";
 import { FilterFormProps, FilterFormStates } from "../types/filter";
 
-import styles from "./styles.less";
+import "./styles.less";
 
 class FilterForm extends PureComponent<FilterFormProps, FilterFormStates>  {
     public items: any = null;
@@ -145,7 +145,7 @@ class FilterForm extends PureComponent<FilterFormProps, FilterFormStates>  {
             <Form
                 onSubmit={(e) => { this.submit(e, form); }}
                 onReset={() => { this.reset(form); }}
-                className={styles.filterWrapper2}
+                className="filter-wrap-form"
                 style={{ maxHeight, overflow: "hidden", boxShadow: hiddenBoxShadow ? "0px 0px 0px #fff" : "0px 0px 12px #D7E3FA" }}
             >
                 <div style={{ display: "flex" }}>
@@ -161,7 +161,7 @@ class FilterForm extends PureComponent<FilterFormProps, FilterFormStates>  {
                         </div>
                         <div style={{ width: 1, height: 16 }} hidden={hidden} />
                         <div
-                            className={styles.pullIcon}
+                            className="filter-wrap-form-pullIcon"
                             style={{ textAlign: "center" }}
                             hidden={hidden}
                             onClick={() => this.toggle(!visible)}
