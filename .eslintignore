@@ -1,4 +1,3 @@
-build/**
-config/**
-public/**
-scripts/**
+/functions/mock/**
+/scripts
+/config

@@ -1,28 +1,110 @@
 {
-    "extends": [
-        "tslint:recommended"
+  "extends": [
+    "tslint-react"
+  ],
+  "rules": {
+    "no-console": true,
+    "object-literal-sort-keys": false,
+    "no-any": false,
+    "indent": [
+      true,
+      "spaces",
+      2
     ],
-    "rules": {
-        "no-console": false,
-        "indent": [
-            true,
-            "spaces",
-            2
-        ],
-        "no-consecutive-blank-lines": [
-            true,
-            2
-        ],
-        "align": [
-            true,
-            "parameters",
-            "statements"
-        ]
-    },
-    "linterOptions": {
-        "exclude": [
-            "config/**/*.js",
-            "node_modules/**"
-        ]
-    }
+    "jsx-no-multiline-js": false,
+    "jsx-no-lambda": false,
+    "no-empty-interface": true,
+    "no-parameter-reassignment": true,
+    "no-var-keyword": true,
+    "no-duplicate-imports": true,
+    "no-empty": true,
+    "no-invalid-template-strings": true,
+    "no-invalid-this": true,
+    "no-sparse-arrays": true,
+    "no-switch-case-fall-through": true,
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "curly": [
+      true,
+      "ignore-same-line"
+    ],
+    "no-arg": true,
+    "no-conditional-assignment": true,
+    "no-construct": true,
+    "no-duplicate-super": true,
+    "no-duplicate-switch-case": true,
+    "no-duplicate-variable": [
+      true,
+      "check-parameters"
+    ],
+    "no-string-throw": true,
+    "no-unused-expression": true,
+    "prefer-object-spread": true,
+    "use-isnan": true,
+    "prefer-const": true,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ],
+    "space-before-function-paren": [
+      true,
+      "asyncArrow"
+    ],
+    "no-var-requires": true,
+    "class-name": true,
+    "completed-docs": false,
+    "import-spacing": true,
+    "new-parens": true,
+    "no-angle-bracket-type-assertion": true,
+    "no-consecutive-blank-lines": [
+      true,
+      3
+    ],
+    "no-reference-import": true,
+    "number-literal-format": true,
+    "object-literal-shorthand": true,
+    "no-unnecessary-initializer": true,
+    "one-variable-per-declaration": [
+      true,
+      "ignore-for-loop"
+    ],
+    "no-this-assignment": [
+      true,
+      {
+        "allow-destructuring": true
+      }
+    ],
+    "radix": true,
+    "triple-equals": true,
+    "interface-name": [true, "never-prefix"],
+    "jsdoc-format": [
+      true,
+      "check-multiline-start"
+    ],
+    "no-redundant-jsdoc": true
+  },
+  "linterOptions": {
+    "exclude": [
+      "**/*.json",
+      "node_modules"
+    ]
+  }
 }
